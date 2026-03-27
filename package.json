@@ -1,6 +1,6 @@
 {
   "name": "@rupertsworld/emitter",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "type": "module",
   "description": "Typed event emitter with disposable subscriptions",
   "main": "./dist/index.js",
@@ -16,13 +16,15 @@
   ],
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "test": "node --import tsx --test tests/*.test.ts"
   },
   "dependencies": {
     "@rupertsworld/disposable": "^0.1.0",
     "mitt": "^3.0.1"
   },
   "devDependencies": {
+    "tsx": "^4.21.0",
     "typescript": "^5.7.0"
   }
 }
